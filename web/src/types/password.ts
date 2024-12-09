@@ -1,5 +1,6 @@
 /**
- * Interface representing a password entry returned from the backend.
+ * @file password.ts
+ * @description Contains Typescript interfaces for password entries and results
  */
 
 export interface PasswordEntryResult {
@@ -7,11 +8,6 @@ export interface PasswordEntryResult {
   username: string;
   password: string;
 }
-
-/**
- * Interface representing a password entry in a list (Without searching by label).
- * This includes label hash for refrence
- */
 
 export interface PasswordEntryListItem {
   labelHash: string;
