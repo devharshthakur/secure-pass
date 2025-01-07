@@ -6,6 +6,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { FaGithub } from 'react-icons/fa';
+import { RefreshCw } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -17,6 +18,12 @@ export default function Navbar() {
         </Button>
       </Link>
       <div className="flex items-center space-x-4">
+        <Link href="/update" passHref>
+          <Button variant="default">
+            <RefreshCw className="mr-2" />
+            Updates
+          </Button>
+        </Link>
         <Link href="/about" passHref>
           <Button variant="outline">About</Button>
         </Link>
