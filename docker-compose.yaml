@@ -3,8 +3,30 @@ services:
   mongo:
     image: mongo:latest
     container_name: securepass-mongo
-    ports:
-      - "27017:27017"
     volumes:
-      - /Volumes/Crucial1TB/Docker/Volumes/mongo-data:/data/db
+      - /Volumes/T9/docker/volumes/mongo-data:/data/db
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: securepass-api
+    depends_on:
+      - mongo
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/securepass
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: securepass-web
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
     restart: unless-stopped

@@ -1,0 +1,13 @@
+# This docker-compose file is used to boot a mongodb database for this project.
+# Use this file to boot a db using docker (if you want to use docker)
+
+version: '3.9'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: securepass-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - /Volumes/T9/docker/volumes/mongo-data:/data/db
+    restart: unless-stopped

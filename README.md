@@ -70,6 +70,7 @@ pnpm install
 ```bash
 docker-compose up -d
 ```
+The `docker-compose.yml` file is located in the root directory of the project.
 
 4. Start the development servers:
 ```bash

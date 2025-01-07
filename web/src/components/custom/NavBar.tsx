@@ -11,14 +11,14 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between p-4">
       <Link href="https://github.com/devharshthakur" passHref>
-        <Button variant="ghost" className="text-base">
+        <Button variant="outline" className="text-base">
           <FaGithub className="mr-2" />
           @devharshthakur
         </Button>
       </Link>
       <div className="flex items-center space-x-4">
         <Link href="/about" passHref>
-          <Button variant="ghost">About</Button>
+          <Button variant="outline">About</Button>
         </Link>
         <Link href="https://github.com/devharshthakur/secure-pass" passHref>
           <Button variant="outline">

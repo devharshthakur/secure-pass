@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-grow flex-col items-center justify-center px-4 text-center">
         <h1 className="mb-4 text-4xl font-bold">Secure Pass</h1>
-        <p className="mb-8 max-w-md text-xl">Your trusted companion for secure password management and storage.</p>
+        <p className="mb-8 max-w-md text-xl">Simple secure password management and storage application.</p>
         <Link href="/dashboard">
           <Button size="lg">Get Started</Button>
         </Link>
