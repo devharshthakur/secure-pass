@@ -1,4 +1,4 @@
-# 🔐 SecurePass - My Simple Password Manager Project
+# 🔐 SecurePass 
 
 Welcome to the repository for **SecurePass**! 🎉 This is a simple yet foundational password manager application I built as a project to deeply understand and demonstrate key concepts in **encryption**, **hashing**, and **secure storage practices**. Think of it as my hands-on playground for digital security principles and a direct implementation of what I learned! 💪🔒
 
@@ -153,6 +153,5 @@ This project serves as a demonstration of security *concepts* in code, not a dep
 ## 📄 License
 
 This project is open source and available under the **MIT License**. I believe in open access for learning, so feel free to explore and learn from it! See the [LICENSE](LICENSE) file in the root directory for full details. Feel free to learn from, modify, and distribute it according to the terms. 👍
-*   Find me on GitHub: [@devharshthakur](https://github.com/devharshthakur)
 
 Thanks for checking out my project! I hope exploring the code helps you learn as much as building it taught me. 😊✨
